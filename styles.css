@@ -112,4 +112,16 @@ footer a {
 
 .center {
     flex: 2;
+    position: relative;
+    left: -30px;
+}
+
+.left{
+    position: relative;
+    left:-150px;
+}
+
+.right{
+    position: relative;
+    right: -100px;
 }
