@@ -25,6 +25,8 @@ header .logo a{
     text-indent: -99999999px;
     position: relative;
     background-image: url("./Pictures/prof-pic-edited.jpg");
+    box-shadow: black 0 0 15px;
+    border: 1px solid black;
     background-repeat: no-repeat;
     background-size: 300px;
     top: 20px;
