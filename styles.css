@@ -4,13 +4,19 @@ html {
 }
 
 header{
-    background: gray;
+    background-image: url(./Pictures/header-background.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-evenly;
     padding : 40px;
-    /* need to add background-image, background-size: 100%, background-position:center */
+}
+
+.left a, header p, .right a{
+    color: white;
 }
 
 header .logo{
@@ -58,9 +64,12 @@ nav a {
 }
 
 section{
-    background: lightblue;
-    line-height: 20px;
+    background-image: url(./Pictures/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     padding: 10px;
+    height: 635px;
 }
 
 footer{
