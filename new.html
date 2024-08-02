@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+            position: relative;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .profpic{
+            width: 250px;
+            border-radius: 50px;
+            border: 2px solid white;
+            box-shadow: white 0 0 15px;
+        }
+
+        nav .navigation li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 60px;
+        }
+
+        nav .navigation li a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav .information li{
+            list-style: none;
+            color: white;
+            font-size: 24px;
+            margin-right: 400px;
+            line-height: 50px;
+        }
+
+        nav .information li a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        .content{
+            text-align: center;
+        }
+
+        .content h1{
+            font-size: 100px;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .content h1:hover{
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+        
+        .content h3{
+            font-size: 30px;
+            color: white;
+        }
+
+        .content a{
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            font-size: 40px;
+            border: 4px solid white;
+            padding: 10px;
+            border-radius: 50px;
+            margin-top: 50px;
+            }
+
+        .back-video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        @media(min-aspect-ratio: 16/9){
+            .back-video{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media(max-aspect-ratio: 16/9){
+            .back-video{
+                width: auto;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero"> 
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="Pictures/background playback.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <img src="Pictures/prof-pic-edited.jpg" alt="profile-picture" class="profpic">
+            <ul class="information">
+                <li><p>Tomer Ashkenazi</p></li>
+                <li>Shoham, Israel</li>
+                <li><a href="mailto:ashketomer@gmail.com" target="_blank" title="Email me">ashketomer@gmail.com</a></li>
+                <li><a href="tel:+972528498914" title="Call me">+972-(0)-52-849-8914</a></li>
+                <li><a href="https://github.com/AshkeTomer?tab=repositories" target="_blank" title="My GitHub">My GitHub</a></li>
+            </ul>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">My work</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Hi! I am Tomer Ashkenazi</h1>
+            <h3>A computer science graduate, junior software engineer</h3>
+            <h3>I have developed several apps, websites and designs through my portfolio</h3>
+            <h3>Proficient in Java, Python, C++, C#, HTML, CSS and more</h3>
+            <a href="#">Check out my work</a>
+        </div>
+    </div>
+</body>
+</html>
