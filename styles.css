@@ -32,6 +32,12 @@ nav .profpic{
     border-radius: 50px;
     border: 2px solid white;
     box-shadow: white 0 0 15px;
+    margin-right: 20px;
+}
+
+nav .picANDdetails{
+    display: flex;
+    align-items: center;
 }
 
 nav .navigation li{
