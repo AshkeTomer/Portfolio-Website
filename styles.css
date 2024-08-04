@@ -33,6 +33,11 @@ nav .profpic{
     border: 2px solid white;
     box-shadow: lightblue 0 0 15px;
     margin-right: 60px;
+    transition: box-shadow 0.5s;
+}
+
+nav .profpic:hover{
+    box-shadow: lightblue 0 0 50px;
 }
 
 nav .picANDdetails{
@@ -47,7 +52,7 @@ nav .navigation li{
 }
 
 nav .navigation li:hover{
-    animation: bounce 1s ease-in 1;
+    animation: rise 0.25s ease-in;
 }
 
 nav .navigation li a{
@@ -115,5 +120,15 @@ nav .information li a{
     
     60%{
         transform: translateY(-15px);
+    }
+}
+
+@keyframes rise{
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-30px);
     }
 }
