@@ -51,10 +51,6 @@ nav .navigation li{
     margin-left: 60px;
 }
 
-nav .navigation li:hover{
-    animation: rise 0.25s ease-in;
-}
-
 nav .navigation li a{
     text-decoration: none;
     color: white;
